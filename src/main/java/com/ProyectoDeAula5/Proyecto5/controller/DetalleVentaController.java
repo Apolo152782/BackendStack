@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/detalleventa")
-@CrossOrigin(origins = "https://frontend7-semestre.vercel.app")
+@CrossOrigin(origins = "https://stackflow-delta.vercel.app")
 public class DetalleVentaController {
 
     @Autowired

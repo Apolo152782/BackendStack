@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/graficos")
-@CrossOrigin(origins = "https://frontend7-semestre.vercel.app")
+@CrossOrigin(origins = "https://stackflow-delta.vercel.app")
 public class GraficoController {
 
     @Autowired

@@ -12,7 +12,7 @@ import com.ProyectoDeAula5.Proyecto5.service.dto.PrediccionService;
 
 @RestController
 @RequestMapping("/api/predecir")
-@CrossOrigin(origins = "https://frontend7-semestre.vercel.app")
+@CrossOrigin(origins = "https://stackflow-delta.vercel.app")
 public class PrediccionController {
 
     @Autowired

@@ -15,7 +15,7 @@ import com.ProyectoDeAula5.Proyecto5.service.ProveedorService;
 
 @RestController
 @RequestMapping("/api/productos")
-@CrossOrigin(origins = "https://frontend7-semestre.vercel.app")
+@CrossOrigin(origins = "https://stackflow-delta.vercel.app")
 public class ProductoController {
 
     @Autowired
