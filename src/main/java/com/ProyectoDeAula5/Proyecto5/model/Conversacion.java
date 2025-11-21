@@ -9,20 +9,25 @@ import java.time.Instant;
 @Table(name = "conversaciones")
 public class Conversacion {
 
+    // Mapeamos el id al nombre real en la BD (my_row_id), que es la columna
+    // AUTO_INCREMENT actual
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "my_row_id")
     private Long id;
 
-    @Column(nullable = false)
+    // nombre real en la BD: usuario_id
+    @Column(name = "usuario_id", nullable = false)
     private String usuarioId;
 
-    @Column(length = 120)
+    @Column(name = "titulo", length = 120)
     private String titulo;
 
-    @Column(nullable = false)
+    // nombres reales en la BD
+    @Column(name = "creada_en", nullable = false)
     private Instant creadaEn;
 
-    @Column(nullable = false)
+    @Column(name = "actualizada_en", nullable = false)
     private Instant actualizadaEn;
 
     @PrePersist
